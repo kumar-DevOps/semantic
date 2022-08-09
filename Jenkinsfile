@@ -43,11 +43,7 @@ pipeline{
 		        echo "${env.BRANCH_NAME}"
 		        echo "  ${BRANCH_NAME}"
     
-	    	sh '''
-		        printenv
-			    C:\Users\Admi\.dotnet\tools\dotnet-gitversion.exe  \output buildserver
-
-		    '''
+	    	
 		    echo "This is Master Branch Execution"
 		        script {
 			    def props = readProperties file: 'gitversion.properties'
