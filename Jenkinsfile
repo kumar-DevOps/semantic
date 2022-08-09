@@ -20,7 +20,7 @@ pipeline{
 			
 			    sh '''
 		                printenv
-			            C:\Users\Admi\.dotnet\tools\dotnet-gitversion  \output buildserver
+			            C:/Users/Admi/.dotnet/tools/dotnet-gitversion  /output buildserver
 		            '''
 	
 		            echo "This is Master Branch Execution"
