@@ -17,7 +17,11 @@ pipeline{
 	            steps{
 		            echo "${env.BRANCH_NAME}"
 		            echo "${BRANCH_NAME}"
-		
+			
+			    sh '''
+		                printenv
+			            C:\Users\Admi\.dotnet\tools\dotnet-gitversion  \output buildserver
+		            '''
 	
 		            echo "This is Master Branch Execution"
 		            script {
