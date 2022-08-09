@@ -14,7 +14,7 @@ pipeline{
 	            when {
 	                branch "master"
 	            }
-	            stpes{
+	            steps{
 		            echo "${env.BRANCH_NAME}"
 		            echo "${BRANCH_NAME}"
 		
@@ -39,7 +39,7 @@ pipeline{
 	            when {
 	                branch "major/*"
 	                }
-	            stpes{
+	            steps{
 		            echo "${env.BRANCH_NAME}"
 		            echo "  ${BRANCH_NAME}"
     
