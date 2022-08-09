@@ -41,7 +41,7 @@ pipeline{
 	            }
 	        stpes{
 		        echo "${env.BRANCH_NAME}"
-		        echo "  ${BRANCH_NAME}
+		        echo "  ${BRANCH_NAME}"
     
 	    	sh '''
 		        printenv
